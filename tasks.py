@@ -207,7 +207,7 @@ def image_to_textbase64(base64_image,prompt):
     ]
     }
 
-    response = requests.post(os.getenv("LLM_API_URL"), headers=headers, json=payload)
+    response = requests.post("https://aiproxy.sanand.workers.dev/openai/v1/chat/completions", headers=headers, json=payload)
 
     
     data=response.json()
