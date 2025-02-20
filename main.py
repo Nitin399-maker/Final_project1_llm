@@ -36,8 +36,8 @@ app.add_middleware(
 
 
 DATA_DIR = "data"
-AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pdGluLmt1bWFyMUBzdHJhaXZlLmNvbSJ9.VZm7Fe1obwNJ-Rsr3arvQvYWqQ9zAAj6WXR9InfDFxk"
-LLM_API_URL = "https://llmfoundry.straive.com/openai/v1/chat/completions"  # Replace with actual LLM endpoint
+AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Im5pdGluLmt1bWFyMUBzdHJhaXZlLmNvbSJ9.RPdenfxfQGPm02Y56psYYOQ082HRsmQywLltAxe9t8c"
+LLM_API_URL = "https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"  # Replace with actual LLM endpoint
 
 # Task mapping
 task_mapping = {
