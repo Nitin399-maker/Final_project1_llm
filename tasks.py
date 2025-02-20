@@ -11,7 +11,7 @@ import shutil
 import requests
 import base64
 
-
+AIPROXY_TOKEN="eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Im5pdGluLmt1bWFyMUBzdHJhaXZlLmNvbSJ9.RPdenfxfQGPm02Y56psYYOQ082HRsmQywLltAxe9t8c"
 # Load transformer model for text similarity
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
@@ -183,7 +183,7 @@ def image_to_textbase64(base64_image,prompt):
   
     headers = {
     "Content-Type": "application/json",
-    "Authorization": f"Bearer {os.getenv("AIPROXY_TOKEN")}"
+    "Authorization": f"Bearer {AIPROXY_TOKEN}"
     }
 
     payload = {

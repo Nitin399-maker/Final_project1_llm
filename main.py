@@ -6,8 +6,9 @@ import requests
 from fastapi.responses import PlainTextResponse
 import subprocess
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
-
+load_dotenv()
 
 from tasks import (
     install_and_run_datagen,
@@ -35,8 +36,8 @@ app.add_middleware(
 
 
 DATA_DIR = "data"
-AIPROXY_TOKEN = os.getenv("AIPROXY_TOKEN")
-LLM_API_URL = "https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"  # Replace with actual LLM endpoint
+AIPROXY_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5pdGluLmt1bWFyMUBzdHJhaXZlLmNvbSJ9.VZm7Fe1obwNJ-Rsr3arvQvYWqQ9zAAj6WXR9InfDFxk"
+LLM_API_URL = "https://llmfoundry.straive.com/openai/v1/chat/completions"  # Replace with actual LLM endpoint
 
 # Task mapping
 task_mapping = {
